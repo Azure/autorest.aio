@@ -1,3 +1,16 @@
+# AutoRest All-In-One for Windows
+
+In order to create a build of AutoRest that can be used in a completely offline fashion, clone this repository and run `npm install`.
+
+
+``` powershell
+git clone https://github.com/azure/autorest.aio
+cd autorest.aio
+npm install 
+```
+
+It will produce a zip file with AutoRest and all of the plugins installed.
+
 
 # Contributing
 
