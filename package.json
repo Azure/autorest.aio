@@ -1,0 +1,29 @@
+{
+  "name": "autorest.windows",
+  "version": "2.0.4198",
+  "description": "A simple script to make an x-copy deployable autorest",
+  "scripts": {
+    "preinstall": "cmd /c rmdir /s /q .\\node_modules 2>nul & erase package-lock.json 2>nul & erase *.zip 2>nul & erase autorest.cmd 2>nul",
+    "prepare": "powershell ./prep.ps1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autorest": "preview",
+    "dotnet-2.0.0": "^1.4.4",
+    "dotnet-2.0.0-win": "^1.0.5",
+    "@microsoft.azure/autorest-core": "preview",
+    "@microsoft.azure/autorest.azureresourceschema": "latest",
+    "@microsoft.azure/autorest.csharp": "latest",
+    "@microsoft.azure/autorest.go": "latest",
+    "@microsoft.azure/autorest.java": "latest",
+    "@microsoft.azure/autorest.modeler": "latest",
+    "@microsoft.azure/autorest.nodejs": "latest",
+    "@microsoft.azure/autorest.python": "latest",
+    "@microsoft.azure/autorest.ruby": "latest",
+    "@microsoft.azure/openapi-validator": "latest",
+    "@microsoft.azure/classic-openapi-validator": "latest",
+    "@microsoft.azure/autorest.typescript": "latest",
+    "oav": "latest"
+  }
+}
